@@ -3,6 +3,7 @@ source "https://rubygems.org"
 source "https://rubygems.org"
 ruby "3.1.6"  # Use a version Heroku supports
 
+gem "sqlite3", ">= 2.1"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
