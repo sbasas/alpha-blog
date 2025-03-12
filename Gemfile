@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 source "https://rubygems.org"
-ruby "3.1.6"  # Use a version Heroku supports
+ruby "3.3.5"  # Use a version Heroku supports
 
 gem "sqlite3", ">= 2.1"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
