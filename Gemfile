@@ -5,7 +5,7 @@ ruby "3.3.5"  # Use a version Heroku supports
 
 gem "sqlite3", ">= 2.1"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.3"
+gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use the Puma web server [https://github.com/puma/puma]
