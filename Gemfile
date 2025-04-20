@@ -3,7 +3,6 @@ source "https://rubygems.org"
 source "https://rubygems.org"
 ruby "3.3.5"  # Use a version Heroku supports
 
-gem "sqlite3", ">= 2.1"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -45,6 +44,8 @@ gem "thruster", require: false
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", ">= 2.1"
+
+  gem "byebug", "~> 11.1", ">= 11.1.3"
 
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
