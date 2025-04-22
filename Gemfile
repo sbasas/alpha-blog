@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 source "https://rubygems.org"
-ruby "3.3.5"  # Use a version Heroku supports
+ruby "3.4.3"  # Use a version Heroku supports
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
