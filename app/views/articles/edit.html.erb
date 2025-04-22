@@ -1,21 +1,6 @@
 <p>Edit article</p>
 
-<% if @article.errors.any? %>
-  <% @article.errors.full_messages.each do |error_message| %>
-    <p color='red'><%= error_message %></p>
-  <% end %>  
-<% end%>
-<%= form_with(model: @article, local: true) do |f| %>
-  <p>
-    <%= f.label :title%></br>
-    <%= f.text_field :title %>
-  </p>
-  <p>  
-    <%= f.label :description %></br>
-    <%= f.text_area :description %>
-  </p>  
-
-  <p>
-    <%= f.submit "Update Article" %>
-  </p>
-<% end %>
+<%= render 'form'%>
+<p>
+  <%= link_to "Cancel and return to articles page", articles_path %>
+</p>
