@@ -24,7 +24,14 @@ test:
 # Store production database in the storage/ directory, which by default
 # is mounted as a persistent Docker volume in config/deploy.yml.
 production:
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
+  primary:
+    # Your existing primary database config
+    adapter: postgresql
+    url: <%= ENV['DATABASE_URL'] %>
+    # Other settings...
+    
+  cable:
+    adapter: postgresql
+    url: <%= ENV['DATABASE_URL'] %>
+    # You can use the same database as primary or a different one
+    # depending on your needs
