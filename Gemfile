@@ -45,7 +45,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", ">= 2.1"
 
-  gem "byebug", "~> 11.1", ">= 11.1.3"
+  gem "byebug", "~> 12.0"
 
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
